@@ -1,0 +1,6 @@
+framework module Pods_ar_thai_taste {
+  umbrella header "Pods-ar_thai_taste-umbrella.h"
+
+  export *
+  module * { export * }
+}
