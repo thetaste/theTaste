@@ -13,14 +13,16 @@ class SocialViewController: UIViewController {
     @IBOutlet weak var sliderCollectionView: UICollectionView!
     @IBOutlet weak var pageView: UIPageControl!
     
-    let urlKeyArr = ["https://html.com/wp-content/uploads/flamingo.jpg",
-                     "https://html.com/wp-content/uploads/flamingo.jpg",
-                     "https://html.com/wp-content/uploads/flamingo.jpg",
-                     "https://html.com/wp-content/uploads/flamingo.jpg",
-                     "https://html.com/wp-content/uploads/flamingo.jpg",
-                     "https://html.com/wp-content/uploads/flamingo.jpg",
-                     "https://html.com/wp-content/uploads/flamingo.jpg",
-                     "https://html.com/wp-content/uploads/flamingo.jpg"]
+    let urlKeyArr = ["https://i.ibb.co/XkgQPCm/MG-0364.jpg",
+                     "https://i.ibb.co/pz6pZ3S/MG-0454.jpg",
+                     "https://i.ibb.co/JQ7rh5f/MG-0727.jpg",
+                     "https://i.ibb.co/sRs4WqQ/MG-0818.jpg",
+                     "https://i.ibb.co/Fhs0tkD/MG-0925.jpg",
+                     "https://i.ibb.co/XDSnhqX/MG-0945.jpg",
+                     "https://i.ibb.co/gVNCbht/MG-0969.jpg",
+                     "https://i.ibb.co/xh1w5Ht/MG-1196.jpg",
+                     "https://i.ibb.co/1XqLKVz/MG-2206.jpg",
+                     "https://i.ibb.co/Lhqs5kK/MG-1116.jpg"]
     
     var imageArr = [UIImage]()
     
@@ -35,6 +37,12 @@ class SocialViewController: UIViewController {
             self.timer = Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(self.changeImage), userInfo: nil, repeats: true)
         }
         loadImages()
+    }
+    
+    @IBAction func websiteButton(_ sender: Any) {
+        if let url = URL(string: "https://www.thetaste.co.nz/") {
+            UIApplication.shared.open(url)
+        }
     }
     
     func loadImages(){

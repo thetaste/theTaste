@@ -133,8 +133,11 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
             }*/
             for vc in videoContainers{
                 if vc.targetName == vaildAnchor.referenceImage.name {
-                    
-                    if(node.isHidden) {
+                    if (CMTimeGetSeconds(vc.videoPlayer.currentTime()) >=
+                        CMTimeGetSeconds(vc.videoPlayer.currentItem!.duration)) {
+                        vc.videoPlayer.seek(to: CMTime(seconds: 0, preferredTimescale: 60000) )
+                    }
+                    else if(node.isHidden) {
                         vc.videoPlayer.pause()
                     }
                     else {
