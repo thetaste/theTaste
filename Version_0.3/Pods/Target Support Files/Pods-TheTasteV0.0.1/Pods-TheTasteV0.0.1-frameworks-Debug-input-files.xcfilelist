@@ -1,6 +1,0 @@
-${PODS_ROOT}/Target Support Files/Pods-TheTasteV0.0.1/Pods-TheTasteV0.0.1-frameworks.sh
-${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework
-${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework
-${BUILT_PRODUCTS_DIR}/FBSDKShareKit/FBSDKShareKit.framework
-${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework
-${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework
