@@ -7,6 +7,7 @@
 //
 import UIKit
 import FBSDKCoreKit
+import Firebase
 @UIApplicationMain class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
@@ -38,6 +39,10 @@ import FBSDKCoreKit
         
         //Set Tab Bar Selected Underline
         UITabBar.appearance().selectionIndicatorImage = getImageWithColorPosition(color: .init(displayP3Red: 0.9804, green: 0.6353, blue: 0.1020, alpha: 1), size: CGSize(width:(self.window?.frame.size.width)!/3,height: 35), lineSize: CGSize(width:(self.window?.frame.size.width)!/3, height:2))
+        
+        FirebaseApp.configure()
+        
+        
         
         return true
     }

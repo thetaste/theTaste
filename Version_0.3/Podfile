@@ -6,6 +6,8 @@ target 'TheTasteV0.0.1' do
   use_frameworks!
 
   # Pods for TheTasteV0.0.1
+  
+pod 'GoogleAnalytics'
 pod 'Firebase'
 pod 'FBSDKCoreKit'
 pod 'FBSDKShareKit'

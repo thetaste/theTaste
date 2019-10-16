@@ -122,6 +122,10 @@ SPEC CHECKSUMS:
   GoogleUtilities: f895fde57977df4e0233edda0dbeac490e3703b6
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
 
+<<<<<<< HEAD
 PODFILE CHECKSUM: f6ad4e7fbc0ca5c3102a9132c1ae9bc21f69b7a3
+=======
+PODFILE CHECKSUM: 75aae7cc1c6ab12e3115e355c52bd4c90d48115d
+>>>>>>> 82a9f826bd89bbd1d6556946af8eb3cb5cb5c38c
 
 COCOAPODS: 1.8.3
