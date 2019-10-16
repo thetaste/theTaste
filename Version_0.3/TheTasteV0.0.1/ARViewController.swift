@@ -20,7 +20,7 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
         var node : SCNNode?
         var anchor : ARAnchor?
         var play = Bool()
-        
+    
         init(targetName : String, player : AVPlayer, node: SCNNode, anchor: ARAnchor, play: Bool) {
             
             self.targetName = targetName
