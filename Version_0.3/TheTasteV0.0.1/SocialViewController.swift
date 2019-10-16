@@ -14,23 +14,36 @@ class SocialViewController: UIViewController {
     
     @IBAction func buttonAction(_ sender: Any) {
         //alert
-        //let alert = UIAlertController(title: "share", message: "Share the video", preferredStyle: .actionSheet)
-        //self.accessibilityFrame = CGRect(x: 61, y: 670, width: view.frame.width - 123, height: 35)
+        let alert = UIAlertController(title: "share", message: "Share the video", preferredStyle: .actionSheet)
+        self.accessibilityFrame = CGRect(x: 61, y: 670, width: view.frame.width - 123, height: 35)
         //fisrt action
-       // let actionOne = UIAlertAction(title: "Share on Facebook", style: .default ){(action) in
+        let actionOne = UIAlertAction(title: "Share on Facebook", style: .default ){(action) in
             
-       //     if SLComposeViewController.isAvailable(forServiceType: SLServiceTypeFacebook)
-          //  {
-       //         post?.setInitialText("Video of the food")
-         //   }
-      //  }
+            if SLComposeViewController.isAvailable(forServiceType: SLServiceTypeFacebook)
+            {
+                let post = SLComposeViewController(forServiceType: SLServiceTypeFacebook)!
+                post.setInitialText("Video of the food")
+                
+                self.present(post, animated: true, completion: nil)
+            }else{self.showAlert(service: "Facebook")}
+        }
         
         //add action to action sheet
-       // alert.addAction(actionOne)
+        alert.addAction(actionOne)
         
         //present alert
-      //  self.present(alert, animated: true, completion: nil)
-                let controller = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
+      self.present(alert, animated: true, completion: nil)
+    }
+    
+    func showAlert(service: String)
+    {
+        let alert = UIAlertController(title: "Error", message: "You are not connected to \(service)", preferredStyle: .alert)
+        let action = UIAlertAction(title: "Dismiss", style: .cancel, handler: nil)
+        
+        alert.addAction(action)
+        present(alert, animated: true, completion: nil)
+    }
+                /*let controller = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
         controller?.completionHandler = { result in
             switch result {
             case .cancelled:
@@ -62,7 +75,7 @@ class SocialViewController: UIViewController {
             }
         }
         self.present(controller!, animated: true, completion: nil)
-    }
+    }*/
     
     
     @IBOutlet weak var sliderCollectionView: UICollectionView!

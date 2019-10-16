@@ -30,7 +30,6 @@
 		7271D31422891E4B003337F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7271D31922891E4B003337F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C510C5E75847199BDA4AE981 /* Pods-TheTasteV0.0.1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheTasteV0.0.1.debug.xcconfig"; path = "Target Support Files/Pods-TheTasteV0.0.1/Pods-TheTasteV0.0.1.debug.xcconfig"; sourceTree = "<group>"; };
-		CED552C423547935008C6E66 /* TheTasteV0.0.1.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TheTasteV0.0.1.entitlements; sourceTree = "<group>"; };
 		FA802E63230380ED0014EF0A /* SocialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialViewController.swift; sourceTree = "<group>"; };
 		FAB4663222FA63C500A68BA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FACEB29A22EE7E3F00A7684F /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
@@ -78,7 +77,6 @@
 		7271D30A22891E4A003337F2 /* TheTasteV0.0.1 */ = {
 			isa = PBXGroup;
 			children = (
-				CED552C423547935008C6E66 /* TheTasteV0.0.1.entitlements */,
 				7271D30B22891E4A003337F2 /* AppDelegate.swift */,
 				FACEB29A22EE7E3F00A7684F /* TabBarController.swift */,
 				7271D30F22891E4A003337F2 /* ARViewController.swift */,
@@ -372,7 +370,7 @@
 				CODE_SIGN_ENTITLEMENTS = TheTasteV0.0.1/TheTasteV0.0.1.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = C5L8SJJSJ5;
+				DEVELOPMENT_TEAM = KPXV7LU8P5;
 				INFOPLIST_FILE = TheTasteV0.0.1/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -396,7 +394,7 @@
 				CODE_SIGN_ENTITLEMENTS = TheTasteV0.0.1/TheTasteV0.0.1.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = C5L8SJJSJ5;
+				DEVELOPMENT_TEAM = KPXV7LU8P5;
 				INFOPLIST_FILE = TheTasteV0.0.1/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
